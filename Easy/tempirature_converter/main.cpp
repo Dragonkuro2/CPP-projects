@@ -18,7 +18,7 @@ int main() {
     std::cin >> option;
     switch (option) {
       case 1:
-        std::cout << "Enter the temperature on celsuis: ";
+        std::cout << "Enter the temperature on Celsius: ";
         std::cin >> value;
         celsuis_to_fahrenheit(value);
         break;
@@ -28,7 +28,7 @@ int main() {
         fahrenheit_to_celsuis(value);
         break;
       case 3:
-        std::cout << "Enter the temperature on celsuis: ";
+        std::cout << "Enter the temperature on Celsius: ";
         std::cin >> value;
         celsuis_to_kelvin(value);
         break;

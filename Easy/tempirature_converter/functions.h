@@ -9,19 +9,19 @@
 // I use this method to re-use our function inside other functions without printing anything.
 
 double cel_to_fahr(double cel) {
-  return ((cel * 9/5) + 32); // celsuis to fahrenheit
+  return ((cel * 9/5) + 32); // celsius to fahrenheit
 }
 
 double fahr_to_cel(double fahr) {
-  return ((fahr - 32) * 5/9); // fahrenheit to celsuis
+  return ((fahr - 32) * 5/9); // fahrenheit to celsius
 }
 
 double cel_to_kelv(double cel) {
-  return (cel + 273.15); // celsuis to kelvin
+  return (cel + 273.15); // celsius to kelvin
 }
 
 double kelv_to_cel(double kelv) {
-  return (kelv - 273.15); // kelvin to celsuis
+  return (kelv - 273.15); // kelvin to celsius
 }
 
 double kelv_to_fahr(double kelv) {
@@ -38,16 +38,16 @@ void  celsuis_to_fahrenheit(double value) {
   double fahrenheit {cel_to_fahr(value)};
 
   if (fahr_to_kelv(fahrenheit) >= 0)
-    std::cout << "Tempurature in fahrenheit: " << fahrenheit << "F" << std::endl;
+    std::cout << "Temperature in fahrenheit: " << fahrenheit << "F" << std::endl;
   else
     std::cout << "Impossible!, there's no termperature under 0k" << std::endl;
 }
 
 void fahrenheit_to_celsuis(double value) {
-  double celsuis {fahr_to_cel(value)};
+  double celsius {fahr_to_cel(value)};
 
-  if (cel_to_kelv(celsuis) >= 0)
-    std::cout << "Tempurature in celsuis: " << celsuis << "C" << std::endl;
+  if (cel_to_kelv(celsius) >= 0)
+    std::cout << "Temperature in celsius: " << celsius << "C" << std::endl;
   else
     std::cout << "Impossible!, there's no termperature under 0k" << std::endl;
 }
@@ -56,16 +56,16 @@ void celsuis_to_kelvin(double value) {
   double kelvin {cel_to_kelv(value)};
 
   if (kelvin >= 0)
-    std::cout << "Tempurature in kelvin: " << kelvin << "K" << std::endl;
+    std::cout << "Temperature in kelvin: " << kelvin << "K" << std::endl;
   else
     std::cout << "Impossible!, there's no termperature under 0k" << std::endl;
 }
 
 void kelvin_to_celsuis(double value) {
-  double celsuis {kelv_to_cel(value)};
+  double celsius {kelv_to_cel(value)};
 
   if (value >= 0) {
-    std::cout << "Tempurature in celsuis: " << celsuis << "C" << std::endl;
+    std::cout << "Temperature in celsius: " << celsius << "C" << std::endl;
   } else {
     std::cout << "Impossible!, there's no termperature under 0k" << std::endl;
   }
@@ -74,7 +74,7 @@ void kelvin_to_celsuis(double value) {
 void kelvin_to_fahrenheit(double value) {
   double fahrenheit {kelv_to_fahr(value)};
   if (value >= 0) {
-    std::cout << "Tempurature in fahrenheit: " << fahrenheit << "F" << std::endl;
+    std::cout << "Temperature in fahrenheit: " << fahrenheit << "F" << std::endl;
   } else {
     std::cout << "Impossible!, there's no termperature under 0k" << std::endl;
   }
