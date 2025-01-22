@@ -6,25 +6,25 @@ int main() {
   do {
     std::cout << "\n\t************************ MENU ************************\n\n";
     std::cout << "1) Addition" << std::endl;
-    std::cout << "2) Substraction" << std::endl;
-    std::cout << "3) Multiplucation" << std::endl;
-    std::cout << "4) Devision" << std::endl;
+    std::cout << "2) Subtraction" << std::endl;
+    std::cout << "3) Multiplication" << std::endl;
+    std::cout << "4) Division" << std::endl;
     std::cout << "0) Close" << std::endl;
-    std::cout << "\n\tEnter you choice: ";
+    std::cout << "\n\tEnter your choice: ";
     std::cin >> option;
 
     switch (option) {
       case 1:
-        Addition();
+        Add();
         break;
       case 2:
-        Substraction();
+        Subtract();
         break;
       case 3:
-        Multiplucation();
+        Multiply();
         break;
       case 4:
-        Division();
+        Divide();
         break;
       case 0:
         std::cout << "GoodBye!" << std::endl;
