@@ -20,7 +20,7 @@ This is a simple temperature converter project written in C++. It allows you to 
   ```
 2. Navigate to the project directory:
   ```sh
-  cd temperature_converter
+  cd CPP-projects/Easy/tempirature_converter
   ```
 3. Compile the program:
   ```sh
