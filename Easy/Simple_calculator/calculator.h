@@ -5,36 +5,36 @@
 
 double values[2];
 
-void Get_values(double (&values)[]) {
+void Get_values(double (&values)[2]) {
   std::cout << "Enter the first value: ";
   std::cin >> values[0];
   std::cout << "Enter the second value: ";
   std::cin >> values[1];
 }
 
-void Addition() {
+void Add() {
   Get_values(values);
   double result = values[0] + values[1];
   std::cout << "The result is: " << result << std::endl;
 }
 
-void Substraction() {
+void Subtract() {
   Get_values(values);
   double result = values[0] - values[1];
   std::cout << "The result is: " << result << std::endl;
 }
 
-void Multiplucation() {
+void Multiply() {
   Get_values(values);
   double result = values[0] * values[1];
   std::cout << "The result is: " << result << std::endl;
 }
 
-void Division() {
+void Divide() {
   Get_values(values);
-  if (values[1] == 0)
-    std::cout << "Division by zero is impossible!" << std::endl;
-  else {
+  if (values[1] == 0) {
+    std::cout << "Error: Division by zero is not allowed." << std::endl;
+  } else {
     double result = values[0] / values[1];
     std::cout << "The result is: " << result << std::endl;
   }
