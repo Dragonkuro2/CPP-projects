@@ -2,7 +2,7 @@
 #define GRAD_H
 
 #include <iostream>
-
+#include <iomanip>
 
 std::string mark_checker(double result);
 double *Get_marks();
