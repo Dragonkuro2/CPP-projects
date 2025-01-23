@@ -1,4 +1,4 @@
-#include "grad.h"
+#include "grades.h"
 
 void Grad_calculator() {
   int option {};
@@ -75,6 +75,7 @@ void GPA_calculator() {
   }
 
   result /= marks[0];
+  std::cout << std::fixed << std::setprecision(2); // Set precision to 2 decimal places
   std::cout << "Your GPA is: " << result << "/" << marks[1] << " - " << mark_checker(result/marks[1]) << std::endl;
 }
 
@@ -88,5 +89,6 @@ void Percent_calculator() {
   result /= marks[0];
   result /= marks[1];
   result *= 100;
+  std::cout << std::fixed << std::setprecision(2); // Set precision to 2 decimal places
   std::cout << "your result by percentage: " << result << "% - " << mark_checker(result / 100) << std::endl;
 }
